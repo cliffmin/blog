@@ -1,18 +1,52 @@
+#mainPage {
+    /*margin-left: 200px;*/
+    /*margin-right: -200px;*/
+    /*padding-right: 250px;*/
+    /*padding-left: 250px;*/
+}
 #navbar {
-    background-color: slategrey;
+    background-color: lightslategrey;
     /*margin-left: auto;*/
     /*margin-right: auto;*/
-    max-height: 150px;
+    height: 40px;
     width: 100%;
+    box-shadow: inset 0 20px 20px -20px #696868, inset 0 -20px 20px -20px #696868;
+    transition:height 1s;
+    -webkit-transition:height 1s; /* Safari */
+}
+#navbar:hover {
+height: 100px;
 }
 
 #navbar a {
+    text-align: center;
     color: #f5f5f5;
+}
+#navbar p {
+    position: relative;
+    text-align: center;
+    color: #ffffff;
+    top: -30px;
+}
+#myPicture {
+    display: block;
+   width: 80%;
+    height: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #postBody h2 {
     color: cornflowerblue;
 
+}
+
+#postBody {
+    background-color: #ffffff;
+    /*border-radius: 5px;*/
+    /*border-style: solid;*/
+    /*border-color: slategrey;*/
+    /*border-width: 3px;*/
 }
 
 #myTitle {
@@ -21,29 +55,35 @@
     color: #f5f5f5;
     padding: 10px;
 }
-
-#postBody {
-    background-color: #ffffff;
-    padding: 30px;
-    right: 90px;
-    border-radius: 5px;
-    border-style: solid;
-    border-color: slategrey;
-    border-width: 3px;
+#myInfo {
+    background-color: slategrey;
+    border-radius: 10px;
+    padding: 10px;
+}
+#myInfo a {
+    color: #f8f8ff;
+    background-color: lightsteelblue;
+}
+#myInfo li {
+    list-style-type: none;
 }
 
+ul.nav a:hover {
+    color: #fff !important;
+    background-color: transparent;
+}
+
+
 #page {
-    background-color: floralwhite;
+
 }
 
 #sidebar {
-    left: 50px;
 }
 
 /* Space out content a bit */
 body {
-    padding-top: 20px;
-    padding-bottom: 70px;
+
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
