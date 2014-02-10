@@ -1,80 +1,67 @@
-<div class="container">
+<div id="mainPage">
 
-    <div id="blog-header" style="position: relative; top: -35px" class="blog-header">
-        <div class="col-md-8 col-sm-8">
+
+    <div class="row">
+        <div id="picture" class="col-md-4 col-sm-4">
+            <img id="myPicture" style="border-radius: 15px;"
+                 src="images/me.jpg" alt=""/>
+        </div>
+        <br/>
+        <br/>
+
+        <div id="blog-header" class="col-md-8 col-sm-4" style="position: relative; top: -35px"
+             class="blog-header">
             <h1 class="blog-title">I'm Cliff Min</h1>
 
             <p class="lead blog-description">A web and mobile engineer. I ♥ JavaScript + iOS. </p>
         </div>
     </div>
-    <div id="picture" class="col-md-4 col-sm-4 col-xs-4 "><img id="myPicture" style="border-radius: 15px;"
-                                                               src="images/me.jpg" alt=""/></div>
 
     <div class="row">
-        <div id="sidebar" class="col-md-4 col-sm-4">
-            <br/>
-            <br/>
+        <div id="sidebar-wrapper">
+            <div id="sidebar" class="col-md-4 ">
 
-            <div id="myInfo">
-                <ul>
-                    <li><a href="#/about"><h4>About Me</h4></a></li>
-                    <hr/>
-                    <li><a href="#/experience"><h4>Projects</h4></a></li>
-                    <hr/>
-                    <li><a href="#/experience"><h4>Contact Me</h4></a></li>
-                    <hr/>
-                    <form style="padding-bottom: 15px" class="nav-search">
-                        <a class="search-toggle"><i class="fa fa-search"></i></a>
+                <br/>
+                <br/>
 
-                        <div class="input-padding-wrapper">
-                            <input type="text" id="st-search-input" placeholder="Search">
-                        </div>
-                    </form>
-                </ul>
+                <div id="myInfo">
+                    <ul>
+                        <li><a href="#/about"><h4>About Me</h4></a></li>
+                        <hr/>
+                        <li><a href="#/experience"><h4>Projects</h4></a></li>
+                        <hr/>
+                        <li><a href="#/experience"><h4>Contact Me</h4></a></li>
+                        <hr/>
+                        <form style="padding-bottom: 15px" class="nav-search">
+                            <a class="search-toggle"><i class="fa fa-search"></i></a>
+
+                            <div class="input-padding-wrapper">
+                                <input type="text" id="st-search-input" placeholder="Search">
+                            </div>
+                        </form>
+                    </ul>
+                </div>
             </div>
         </div>
 
-        <section id="body">
-            <div id="postBody" class="col-md-8 col-sm-12 blog-main" ng-controller="MainCtrl">
-                <div id="posts" class="blog-post" ng-repeat="post in posts">
-                    <h2 class="blog-post-title">{{ post.title }}</h2>
-                    <em><h6>Written {{ post.date }}</h6></em>
+        <div id="postBody" class="col-md-8 blog-main" ng-controller="MainCtrl">
+            <div id="posts" class="blog-post" ng-repeat="post in posts">
+                <h2 class="blog-post-title">{{ post.title }}</h2>
+                <em><h6>Written {{ post.date }}</h6></em>
 
-                    <p>{{ post.content }}</p>
-                </div>
-                <ul class="pagination">
-                    <li><a href="#">&laquo;</a></li>
-                    <li><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">5</a></li>
-                    <li><a href="#">&raquo;</a></li>
-                </ul>
+                <p>{{ post.content }}</p>
             </div>
-        </section>
+            <ul class="pagination">
+                <li><a href="#">&laquo;</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">&raquo;</a></li>
+            </ul>
+        </div>
     </div>
+
 </div>
-
-<!--<div class="container">-->
-
-<!--&lt;!&ndash; Masthead-->
-<!--================================================== &ndash;&gt;-->
-<!--<header class="jumbotron masthead">-->
-<!--<div class="inner">-->
-<!--<h1>My System, using Bootstrap, from Twitter</h1>-->
-
-<!--<p>Simple and flexible HTML, CSS, and Javascript for popular user interface components and interactions.</p>-->
-
-<!--<p class="download-info">-->
-<!--<a href="https://github.com/ajlopez/CssExamples/" class="btn btn-primary btn-large">View project on-->
-<!--GitHub</a>-->
-<!--</p>-->
-<!--</div>-->
-
-<!--</header>-->
-
-<!--<hr class="soften">-->
-
-<!--</div>-->
 
